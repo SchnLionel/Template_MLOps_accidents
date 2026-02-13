@@ -94,7 +94,7 @@ def process_data(input_filepath_users, input_filepath_caract, input_filepath_pla
 
 
     #--Replacing values -1 and 0 
-    # df = replace_values(df)
+    df = replace_values(df)
 
 
     #--Dropping columns 
