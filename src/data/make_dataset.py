@@ -90,7 +90,7 @@ def process_data(input_filepath_users, input_filepath_caract, input_filepath_pla
     df = add_new_columns(df, nb_victim, nb_vehicules)
 
     #--Modification of the target variable  : 1 : prioritary // 0 : non-prioritary
-    # df = modif_target_variable(df)
+    df = modif_target_variable(df)
 
 
     #--Replacing values -1 and 0 
