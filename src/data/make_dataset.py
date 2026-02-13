@@ -101,7 +101,7 @@ def process_data(input_filepath_users, input_filepath_caract, input_filepath_pla
     df = drop_columns(df)
 
     #--Dropping lines with NaN values
-    # df = drop_nans(df)
+    df = drop_nans(df)
 
 
     target = df['grav']
