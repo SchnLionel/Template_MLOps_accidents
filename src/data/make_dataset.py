@@ -98,7 +98,7 @@ def process_data(input_filepath_users, input_filepath_caract, input_filepath_pla
 
 
     #--Dropping columns 
-    # df = drop_columns(df)
+    df = drop_columns(df)
 
     #--Dropping lines with NaN values
     # df = drop_nans(df)
