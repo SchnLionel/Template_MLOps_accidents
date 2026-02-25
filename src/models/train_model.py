@@ -42,3 +42,13 @@ print(f"Predicted label: {rf_classifier.predict(test_data)[0]}")
 # model_filename = './src/models/trained_model.joblib'
 # joblib.dump(rf_classifier, model_filename)
 # print("Model trained and saved successfully.")
+
+
+import bentoml
+
+# ...
+
+# Enregistrer le modèle dans le Model Store de BentoML
+model_ref = bentoml.sklearn.save_model("accidents_rf", rf_classifier)
+
+print(f"Modèle enregistré sous : {model_ref}")
